@@ -1,0 +1,82 @@
+/* sua propriedades no body , fundo e tamanho*/
+
+body{
+	font-family:"Lucida Grande","Lucida Sans Unicode", Verdana,sans-serif;
+	line-height:1.6;
+	background: #fff1d6 url("noise.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+/*centralizar a div do conteúdo no meio da tela */
+.container{
+	margin:0 auto;
+	width:960px;
+}
+/* organização das divs place , espaçamento e margin , cor de fundo */
+.place{
+	background-color: #fff;
+	border-color:#ccc #999 #ccc;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+	padding:10px;
+}
+/* removendo as margem do titulo  e adicionando cores */
+.place h2{
+	border-bottom:1px dashed #7e9f19;
+	margin:0;
+}
+/* estilizando o link */
+.place a{
+	color:#2c88a7;
+	font-weight:bold;
+}
+/* estilizando o link do titulo */
+h1 a{
+	color:#7e9f19;
+	text-decoration:none;
+}
+/* estilando o cursor*/
+h1 a:hover{
+	background-color:#7e9f19;
+	color:#fff;
+}
+/* propriedades para imagem , alinhar horizontalmente*/
+.place img{
+	border:1px solid #7e9f19;
+	float:left;
+	margin:10px 10px 0 0 ;
+	padding:2px;
+}
+/*linha os erros de posicionamento */
+.clear{
+	clear:both;
+}
+
+/*lateral da pagina*/
+.sidenote{
+	background-color: #fffbe4;
+	border:1px solid #c9bc8f;
+	padding:10px;
+	float:right;
+	width:260px;
+}
+/*titulo do sidenote*/
+.sidenote h3{
+	font-size:14px;
+	margin-top:0;
+}
+/*lista do sidenote*/
+.sidenote ol{
+	font-size:12px;
+}
+/* todo os places juntos para o lado esquerdo */
+.places{
+	float:left;
+	width:660px;
+}
+/*rodapé footer do html */
+.footer{
+	font-size:12px;
+	text-align: center;
+}
