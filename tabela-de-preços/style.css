@@ -1,0 +1,60 @@
+table{
+	width:500px;
+}
+/* td da tabela */
+td{
+	border:1px dotted #666;
+	padding:5px;
+}
+/*td com link 'a' cor */
+td a{
+	color:#3B5998;
+}
+/*negrito os preços */
+.expense , .profit {
+	font-weight:bold;
+}
+/* colorir os preços*/
+.expense {color:red;}
+.profit {color:green;}
+/* estilizando os butões */
+.actions a{
+	font-size: 0.9em;
+	color:white;
+	padding:2px 5px;
+	background-color: #3B5998;
+	text-decoration: none;
+}
+/*para imprimir preto em branco */
+@media print {
+	* {
+		color:#000 !important;
+	}
+	table{
+		width:100%;
+	}
+	td{
+		border-color:#000;
+	}
+	/*esconder o link da pagina de impressão*/
+	a::after{
+		content: "(" attr(href) ")";
+			margin-left: 2px;
+	}
+	.actions{
+		display: none;
+	}
+	/* colocando conteudo nas paginas */
+	.expense::before{
+		content: "- ";
+	}
+	.expense::after{
+		content: " - Despesa";
+	}
+	.profit::before{
+		content: "+ ";
+	}
+	.profit::after{
+		content: " - Receita";
+	}
+}
