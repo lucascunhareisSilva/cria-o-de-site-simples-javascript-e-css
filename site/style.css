@@ -67,3 +67,59 @@ section h1::after{
 	position:absolute;
 	top:72%;
 }
+/*criando conteudo para o 'p' para saiba mais */
+.tip::before{
+	content:"\261E";
+	font-size: 35px;
+	margin-right: 10px;
+}
+.tip::after{
+	content:"\261C";
+	font-size: 35px;
+}
+/* formatando o conteudo do blockquote */
+.formulario blockquote{
+	color:#444;
+	font-style: italic;
+}
+.formulario blockquote::before, blockquote::after{
+	color:#000;
+	font-size: 3em;
+}
+.formulario blockquote::before{
+	content:"\201C";
+}
+.formulario blockquote::after{
+	content:"\201D";
+}
+/*Estilizar os buttons e ver as diferenças de cada um */
+.button{
+	background-color: #999999;
+	color:white;
+	display:inline-block;
+	font-weight:bold;
+	padding:0.5em 1em;
+	text-decoration:none;
+}
+.primary-button{
+	background-color: #389739;
+}
+.big-button{
+	font-size:1.1em;
+}
+.small-button{
+	font-size:0.9em;
+}
+/*gerando relatoria de impressão para cores preto e branca  */
+@media print{
+	*{
+		background: transparent !important;
+		color:#000 !important;
+		box-shadow: none !important;
+		border-color:#000 !important;
+		text-shadow: none !important;
+	}
+	a{
+		text-decoration: underline !important;
+	}
+}
