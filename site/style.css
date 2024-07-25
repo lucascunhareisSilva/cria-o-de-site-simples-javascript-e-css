@@ -1,9 +1,36 @@
+/*font-face para definir novas fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap');
 /* faixa do section */
 section{
 	border:1px solid #000;
 	height:100px;
 	margin:40px auto;
 	width:400px;
+}
+/*icone para avançar */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* mudando a cor do h1 */
+h1.icone{
+	color:blue;
+}
+
+.icone::after{
+	content:"\2192";
+	margin-left: 10px;
+	font-family: "Lobster",cursive;
+}
+
+/*h1 do body*/
+.html-css{
+	font-family: "Press Start 2P",cursive;
+	font-size: 18px;
 }
 /* titulo do section */
 section h1{
@@ -15,6 +42,7 @@ section h1{
 	position:relative;
 	padding:5px 0;
 	width:420px;
+	font-family: 'Lobster', cursive;
 
 }
 /*estilzando o lado esquerdo com before no section*/
@@ -122,4 +150,79 @@ section h1::after{
 	a{
 		text-decoration: underline !important;
 	}
+}
+/*estilizando os paragrafos de entrada */
+.icon-ok{
+	color:#489d00
+} 
+.icon-ok::before{
+	content:"\2714";
+	font-family:"Lobster",cursive;
+	margin-right:10px;
+}
+.icon-invalid{
+	color:#990000;
+}
+.icon-invalid::before{
+	content:"\2718";
+	font-family:"Lobster",cursive;
+	margin-right:10px;
+}
+/*h3 do tnt */
+.tnt{
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	border:5px solid #000;
+	line-height:50px;
+	text-align:center;
+	
+}
+/*contorno no span 37 para estilizar o numero 37 */
+.counter{
+	background-color:#000;
+	color:white;
+	border-top-left-radius:25px 10px;
+	border-top-right-radius:25px 10px;
+	display:block;
+	font-size:1.7em;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	width:50px;
+}
+/*desenhando a nuvem com cloud */
+div.cloud-span{
+	background-color:#000;
+	width:50px;
+	height:10px;
+	padding:20px 50px;
+}
+div.cloud-span .cloud{
+	background-color:#fff;
+	border-radius:48px;
+	height:16px;
+	width:48px;
+	display:inline-block;
+	position:relative;
+	
+}
+/*outro pedaço da nuvem */
+div.cloud-span .cloud::before,div.cloud-span .cloud::after{
+	background-color:#fff;
+	content:"";
+	border-radius:50%;
+	height:14px;
+	width:14px;
+	position:absolute;
+	right:7px;
+	top:-6px;
+}
+div.cloud-span .cloud::after{
+	background-color:#fff;
+	height:23px;
+	width:23px;
+	left:7px;
+	right:auto;
+	top:-10px;
 }
