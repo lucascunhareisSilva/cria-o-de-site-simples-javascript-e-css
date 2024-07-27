@@ -226,3 +226,78 @@ div.cloud-span .cloud::after{
 	right:auto;
 	top:-10px;
 }
+/* estilizando a ponte */
+figure{
+	position:relative;
+}
+figure img{
+	display:block;
+	height:500px;
+}
+figcaption{
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	bottom:5px;
+	margin:0 5px;
+	padding:5px;
+	position:absolute;
+	width:300px;
+}
+/* lista estilizada */
+.formulario ul{
+	height:35px;
+	list-style:none;
+	padding:0;
+	width:210px;
+	background-color:#ccc;
+	color:white;
+	border:1px solid rgba(0,0,0,0.3);
+	
+}
+
+/* outra lista-02 */
+.formulario .lista-02{
+	height:35px;
+	list-style:none;
+	padding:0;
+	width:210px;
+	background-color:rgba(0,0,255,1);
+	color:white;
+	border:1px solid rgba(0,0,0,0.3);
+	
+}
+.formulario .lista-03{
+	height:35px;
+	list-style:none;
+	padding:0;
+	width:210px;
+	background-color:rgba(255,0,0,0.9);
+	color:white;
+	border:1px solid rgba(0,0,0,0.3);
+	
+}
+.formulario .lista-04{
+	height:35px;
+	list-style:none;
+	padding:0;
+	width:210px;
+	background-color:rgba(0,255,0,0.7);
+	color:white;
+	border:1px solid rgba(0,0,0,0.3);
+}
+ul li{
+	float:left;
+	line-height:35px;
+	font-size:0.9em;
+	width:50px;
+	text-align:center;
+	border-left:1px solid rgba(255,255,255,0.3);
+	border-right:1px solid rgba(0,0,0,0.3);
+}
+ul li:first-child{
+	border-left:none;
+}
+ul li:last-child{
+	border-right:none;
+}
+
