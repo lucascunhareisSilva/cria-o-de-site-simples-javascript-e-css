@@ -79,6 +79,7 @@ section h1::after{
 	display: inline-block;
 	background-color:#f1efe6;
 	border:1px solid #d3cdae;
+	box-shadow: 3px 3px 3px #AAA;/*sombra para o help */
 	font-size:0.9em;
 	padding:10px;
 	position:relative;
@@ -300,4 +301,46 @@ ul li:first-child{
 ul li:last-child{
 	border-right:none;
 }
+/* line gradient css para as divs*/
+.secundary{
+	font-weight:bold;
+	height:50px;
+	line-height:25px;
+	margin-bottom:10px;
+	padding:5px;
+	text-align:center;
+	width:220px;
+}
+.auto-magin{
+	margin-bottom:14px;
+}
+.secundary .blue{
+	background-color:#4377FA;
+	background-image:linear-gradient(to top , #4377FA, #0537B7);
+}
+.secundary .reverse-blue{
+	background-image:linear-gradient(to top, #0537B7, #4377FA);
+}
+.secundary .omg-pink{
+	background-image:linear-gradient(to top right,#FC0050, #FF79A3);
+}
+.secundary .stops{
+	background-image:linear-gradient(to top, #F5B951 48% ,#F2A31C 56%);
+}
+
+/* estilizando os input do form */
+.input-form input{
+	border:1px solid #999;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.25) inset;
+	padding:2px 5px;
+}
+.input-form input:focus{
+	border-color:#35861B;
+	box-shadow:0 0 5px ,2px 2px 2px rgba(0,0,0,0.25) inset;
+	outline:none;
+	
+}
+
+
+
 
