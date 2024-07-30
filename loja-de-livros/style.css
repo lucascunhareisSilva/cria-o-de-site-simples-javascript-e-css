@@ -1,0 +1,70 @@
+/*todo conteúdo da pagina */
+.book{	
+	margin-left:20px;
+	background-color:#fafafa;
+	width:600px;
+	background-image:linear-gradient(#fafafa,#eee);
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding:10px;
+}
+/* estilizando os titulos */
+h1{
+	color:#bd2c00;
+	font-size:1.2em;
+	margin:0;
+}
+h2{
+	font-size:1em;
+	margin:5px 0;
+}
+/* parte do span */
+.avaliado{
+	background-color:#6cc644;
+	border-radius:3px;
+	color:white;
+	font-size:0.8em;
+	font-weight:bold;
+	padding:3px 7px;
+	text-shadow:0 1px 2px rgba(0,0,0,0.7);
+	display:block;
+	width:80px;
+}
+/*estilizar o menu dos icones */
+ul{
+	background-color:#56b4ef;
+	background-image:linear-gradient(to top, #56b4ef, #148eda);
+	float:left;
+	list-style:none;
+	margin:10px 10px 0 0;
+	padding:0 10px 20px 0;
+	width:300px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.3);
+}
+/* icone  e suas propriedades ,cores */
+.icon::before{
+	margin:0px 5px;
+	font-size:14px;
+}
+.icon{
+	display:block;	
+	font-size:0.9em;
+	font-weight:bold;
+	padding:5px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(255,255,255,0.3);
+	color:#FFF;
+}
+/* icone para escurecer o button */
+.icon:hover{background-color:rgba(0,0,0,0.1);}
+ul a{
+	text-decoration:none;
+	text-shadow:0 1px 0 rgba(0,0,0,0.9);
+	color:#FFF;
+}
+/*limpeza das bordas */
+.paper{border-top:none;}
+.package{border-bottom:none;}
+/* limpeza para deixar os conteudo dentro do article*/
+.clear{clear:both;}
