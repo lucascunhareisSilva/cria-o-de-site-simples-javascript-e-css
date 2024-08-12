@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario</title>
+	<link rel="stylesheet"  href="style_02.css">
+	<link rel="stylesheet" href="normalize.css">
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+	<!-- elemento modal -->
+	<a id='show-modal' href='javascript:;'>Exibir modal</a>
+	<div class="notice">
+		<h1>Atenção</h1>
+		<p>Aqui você pode exibir alguma mensagem importante, que ela irá sobrepor todo o conteúdo do seu site.</p>
+		
+	<a href="javascript:;" class="close">Fechar</a>
+	</div>
+	<!-- overlay -->
+	<div class="overlay"></div>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+	$("#show-modal").on("click",function(){
+		$(".overlay, .notice").show();
+	});
+	$(".overlay, .close").on("click",function(){
+		$(".overlay, .notice").hide();
+	})
+</script>
+</body>
+</html>
