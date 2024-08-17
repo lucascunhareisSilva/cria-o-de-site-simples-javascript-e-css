@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario</title>
+	<link rel="stylesheet"  href="style_02.css">
+	<link rel="stylesheet" href="normalize.css">
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+	<div class="form">
+	<form method="pot" action="">
+		<p>
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" autofocus name="email">
+			<span class="hint">por exemplo , seu nome@hotmail.com</span>
+			<span class="error">Preencha o seu e-mail corretamente.</span>
+		</p>
+		<p>
+			<label for="subject">Assunto</label>
+			<input type="text" id="subject">
+			<span class="hint">Nos diga qual é o seu problema ou ideia </span>
+			<span class="error">Coloque sua ideia corretamente.</span>
+		</p>
+		<p>
+			<label for="content">Mensagem:</label>
+			<textarea id="content"></textarea>
+			<span class="hint">Escreva a sua mensagem, em até 500 caracteres.</span>
+			<span class="error">Escreva seu texto.</span>
+		</p>
+		<button>Enviar mensagem</button>
+	</form>
+	</div>
+</body>
+</html>

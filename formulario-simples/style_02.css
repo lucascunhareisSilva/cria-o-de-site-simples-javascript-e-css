@@ -1,0 +1,67 @@
+/* centralizando um pouco a div */
+.form{
+	border-radius:20px;
+	margin:50px auto;
+	width:50%;
+	background-color:rgba(82,51,51,0.5);
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+/* fixado para deixar o campos ao lado dos labels ,independente da largura definida*/
+label{
+	display:inline-block;
+	font-size:0.9em;
+	font-weight:bold;
+	width:90px;
+}
+/*fixando os input ao lado dos labels */
+input,textarea{
+	border:1px solid #ccc;
+	box-shadow:inset 2px 2px 2px #eee;
+	font-size: 0.9em;
+	padding:2px 5px;
+	display:inline-block;
+	width:200px;
+}
+/*textarea aumentado */
+textarea{
+	height:100px;
+}
+/* esperando o input ser ligado */
+.hint{
+ 	display:none;
+}
+/* hack para exibir a mensagem quando o input é focado */
+input:focus + .hint, textarea:focus + .hint{
+	background-color:#fffbe4;
+	border-radius:3px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+	display:inline-block;
+	font-size:0.8em;
+	margin-left:20px;
+	padding:3px;
+}
+/* criando uma mensagem de erro */
+.error{
+	color:red;
+	display:block;
+	font-size:0.8em;
+	font-style:italic;
+	margin:5px 0 0 90px;
+}
+/*estilizando o button */
+button{
+	position:relative;
+	left:110px;
+	bottom:4px;
+	background-color:rgba(36,189,150,0.5);
+	color:rgba(0,0,0,0.78);
+	border:1px solid #ccc;
+	padding:10px;
+	border-radius:5px;
+	font-weight:bold;
+	
+}
