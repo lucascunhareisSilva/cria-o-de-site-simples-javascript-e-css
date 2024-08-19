@@ -1,0 +1,56 @@
+/*centralizando o conteudo no meio da tela */
+body{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	min-height:100vh;
+	margin:0;
+	background-color:#f0f0f0;
+}
+/*aplicando estilo no form */
+form{
+	font-size:0.8em;
+	padding:10px;
+}
+/*posicionando os label */
+label{
+	display:block;
+	font-weight:bold;
+}
+/* posicionando os inputs */
+input{
+	border:1px solid #ccc;
+	box-shadow: inset 2px 2px 2px #eee;
+	font-size:0.9em;
+	padding:2px 5px;
+}
+/* conteudo principal */
+.container{
+	height:300px;
+	perspective:500px;
+	position:relative;
+	width:200px;
+}
+/* encurtando os forms */
+.card{
+	border-radius:5px;
+	border:1px solid #ccc;
+	height:100%;
+	position:absolute;
+	transform-style:preserve-3d;
+	transition:transform 1s;
+	width:100%;
+}
+.card section{
+	background-color:#fff;
+	border-radius:5px;
+	position:absolute;
+}
+/*usando rotação */
+.signup{
+	transform:rotateY(180deg);
+}
+/*css para jquery*/
+.card.flipped{
+	transform:rotateY(180deg);
+}
